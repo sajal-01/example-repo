@@ -30,7 +30,7 @@ const Navbar = () => {
         <LinkR to="/">
           <div className="logo">
             <img src={logo} alt="logo" />
-            <span className="logo-name">Share It Right!</span>
+            <span className="logo-name">Lorem ipsum</span>
           </div>
         </LinkR>
 
