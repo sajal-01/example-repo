@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+html {
+  margin: 0;
+  background-image: linear-gradient(
+    43deg,
+    #fa2fb5 0%,
+    #100720 46%,
+    #31087b 100%
+  );
+}
+.mainBorrow {
+  width: 100%;
+  margin: 0;
+  padding-top: 120px;
+}
+.headingBx {
+  font-family: 'Righteous', cursive;
+  font-size: 4rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+@media screen and (max-width: 940px) {
+  .mainBorrow {
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 100%;
+    margin: 0;
+    padding-top: 100px;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 0;
+  }
+}
+
+.container .cardBx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background: #232323;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.container .cardBx:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffc23c;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.container .cardBx:hover:before {
+  clip-path: circle(300px at 80% -20%);
+}
+
+.container .cardBx .imgBx {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 100%;
+  height: 220px;
+  transition: 0.5s;
+}
+
+.container .cardBx:hover .imgBx {
+  top: 0%;
+  transform: translateY(0%);
+}
+
+.container .cardBx .imgBx img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-25deg);
+  width: 220px;
+}
+
+.container .cardBx .contentBx {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 0.8s;
+  z-index: 1;
+}
+
+.container .cardBx:hover .contentBx {
+  height: 210px;
+}
+
+.container .cardBx .contentBx h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+  margin: 0;
+}
+.container .cardBx:after {
+  content: '♾️';
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  font-size: 10em;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(255, 255, 25, 0.09);
+}
+
+.container .cardBx .contentBx .size,
+.container .cardBx .contentBx h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 10px;
+  transition: 0.1s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.container .cardBx:hover .contentBx .size,
+.container .cardBx:hover .contentBx h3 {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.1s;
+}
+
+.container .cardBx .contentBx h3 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 10px;
+}
+
+.container .cardBx .contentBx .size a {
+  width: 60px;
+  height: 50px;
+  text-align: center;
+  line-height: 120%;
+  font-size: 30px;
+  font-weight: 700;
+  display: inline-block;
+  color: #fff;
+  background: #fff;
+  margin: 2px 5px;
+  padding: 5px;
+  transition: 0.1s;
+  color: #ffff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container .cardBx .contentBx .size a:hover {
+  background: #9bdc28;
+}
+
+.container .cardBx .contentBx .size a:nth-child(1) {
+  background: #992dff;
+}
+
+.container .cardBx .contentBx .size a:nth-child(2) {
+  background: #03a9f4;
+}
+
+.container .cardBx .contentBx .size a:nth-child(3) {
+  background: #e91e63;
+}
+.container .cardBx .contentBx .size a:nth-child(4) {
+  background: #e28213;
+}
+
+.container .cardBx:hover .contentBx a {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.3s;
+}
