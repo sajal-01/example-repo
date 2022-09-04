@@ -9,6 +9,7 @@ function App() {
     <div>
       <ScrollToTop />
       <Navbar />
+<h2 style={{color:"white"}}>Hello codesandbox</h2>
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/books" element={<Books />} />
