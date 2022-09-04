@@ -9,7 +9,6 @@ function App() {
     <div>
       <ScrollToTop />
       <Navbar />
-
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/books" element={<Books />} />
